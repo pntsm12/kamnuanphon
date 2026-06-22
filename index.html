@@ -168,7 +168,7 @@ footer a{color:#96938C;text-decoration:none;}
       <button class="btn-calc" onclick="calc(0)" type="button">คำนวณ</button>
       <div class="err-msg" id="err0"></div>
     </div></div>
-    <div class="note-box">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก คำนวณจากยอดหนี้คงเหลือจริง<br>อัตราจริงขึ้นกับธนาคารและประวัติเครดิต</div>
+    <div class="note-box">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก<br>คำนวณจากยอดหนี้คงเหลือจริง<br>อัตราจริงขึ้นกับธนาคารและประวัติเครดิต</div>
   </div>
 
   <!-- Mode 1: รถ (Flat Rate) -->
@@ -212,7 +212,7 @@ footer a{color:#96938C;text-decoration:none;}
       <button class="btn-calc" onclick="calc(1)" type="button">คำนวณ</button>
       <div class="err-msg" id="err1"></div>
     </div></div>
-    <div class="note-box">สินเชื่อรถใช้ Flat Rate คำนวณดอกเบี้ยจากเงินกู้เต็มจำนวนตลอดสัญญา<br>ดอกเบี้ยที่แท้จริงสูงกว่าตัวเลขที่เห็น</div>
+    <div class="note-box">สินเชื่อรถใช้ Flat Rate คำนวณดอกเบี้ย<br>จากเงินกู้เต็มจำนวนตลอดสัญญา<br>ดอกเบี้ยที่แท้จริงสูงกว่าตัวเลขที่เห็น</div>
   </div>
 
   <div class="result-box" id="resultBox">
@@ -247,17 +247,6 @@ footer a{color:#96938C;text-decoration:none;}
     </div>
   </div>
 
-  <div class="info-wrap">
-    <div class="info-item">
-      <div class="info-title">ลดต้นลดดอก vs Flat Rate ต่างกันยังไง</div>
-      <div class="info-text">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก (Effective Rate) ดอกเบี้ยแต่ละงวดคำนวณจากยอดหนี้คงเหลือ ยิ่งผ่อนนานดอกเบี้ยยิ่งน้อยลง ส่วนสินเชื่อรถมักใช้ Flat Rate คำนวณจากเงินกู้เต็มจำนวนตลอดสัญญา ทำให้ดูเหมือนดอกเบี้ยต่ำแต่จริงๆสูงกว่า</div>
-    </div>
-    <div class="info-item">
-      <div class="info-title">รายได้ขั้นต่ำที่ควรมีคำนวณยังไง</div>
-      <div class="info-text">ใช้หลักการว่าภาระผ่อนต่อเดือนไม่ควรเกิน 40% ของรายได้ จึงคำนวณจากค่างวดหารด้วย 0.4 เพื่อประเมินว่าควรมีรายได้ขั้นต่ำเท่าไหร่ก่อนขอสินเชื่อ เป็นเกณฑ์ที่ธนาคารส่วนใหญ่ใช้พิจารณาอนุมัติ</div>
-    </div>
-  </div>
-
   <div class="faq-wrap">
     <h2 class="faq-title">คำถามที่พบบ่อย</h2>
     <div class="faq-item">
@@ -275,6 +264,17 @@ footer a{color:#96938C;text-decoration:none;}
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ดาวน์รถเยอะช่วยลดดอกเบี้ยรวมแค่ไหน<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="faq-a">ดาวน์มากขึ้นทำให้ยอดจัดไฟแนนซ์ลดลง ดอกเบี้ย Flat Rate คิดจากยอดจัดไฟแนนซ์โดยตรง ดาวน์เพิ่มจึงลดดอกเบี้ยรวมแบบ<strong>เป็นเส้นตรง</strong> เช่น ดาวน์เพิ่ม 100,000 บาท ที่ดอกเบี้ย 2.79% ผ่อน 5 ปี ประหยัดดอกเบี้ยได้ประมาณ 14,000 บาท</div>
+    </div>
+  </div>
+
+  <div class="info-wrap">
+    <div class="info-item">
+      <div class="info-title">ลดต้นลดดอก vs Flat Rate ต่างกันยังไง</div>
+      <div class="info-text">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก (Effective Rate) ดอกเบี้ยแต่ละงวดคำนวณจากยอดหนี้คงเหลือ ยิ่งผ่อนนานดอกเบี้ยยิ่งน้อยลง ส่วนสินเชื่อรถมักใช้ Flat Rate คำนวณจากเงินกู้เต็มจำนวนตลอดสัญญา ทำให้ดูเหมือนดอกเบี้ยต่ำแต่จริงๆสูงกว่า</div>
+    </div>
+    <div class="info-item">
+      <div class="info-title">รายได้ขั้นต่ำที่ควรมีคำนวณยังไง</div>
+      <div class="info-text">ใช้หลักการว่าภาระผ่อนต่อเดือนไม่ควรเกิน 40% ของรายได้ จึงคำนวณจากค่างวดหารด้วย 0.4 เพื่อประเมินว่าควรมีรายได้ขั้นต่ำเท่าไหร่ก่อนขอสินเชื่อ เป็นเกณฑ์ที่ธนาคารส่วนใหญ่ใช้พิจารณาอนุมัติ</div>
     </div>
   </div>
 
