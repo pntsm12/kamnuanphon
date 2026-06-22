@@ -2,170 +2,135 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>คำนวณผ่อนบ้าน ผ่อนรถ — ค่างวดและตารางผ่อน</title>
-<meta name="description" content="คำนวณผ่อนบ้านและผ่อนรถออนไลน์ฟรี รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และดูตารางผ่อนรายเดือนได้ทันที ไม่มีโฆษณาสินเชื่อ">
-<meta name="keywords" content="คำนวณผ่อนบ้าน, คำนวณผ่อนรถ, ค่างวด, ตารางผ่อน, สินเชื่อบ้าน, ไฟแนนซ์รถ">
-<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>คำนวณผ่อนบ้าน ผ่อนรถ — ค่างวดต่อเดือน ดอกเบี้ยรวม</title>
+<meta name="description" content="คำนวณผ่อนบ้านและผ่อนรถออนไลน์ฟรี รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และดูตารางผ่อนรายเดือน">
 <link rel="canonical" href="https://kamnuan.net/kamnuanphon/">
+<meta property="og:title" content="คำนวณผ่อนบ้าน ผ่อนรถ">
+<meta property="og:description" content="คำนวณผ่อนบ้านและผ่อนรถ รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และตารางผ่อนรายเดือน">
 <meta property="og:type" content="website">
-<meta property="og:title" content="คำนวณผ่อนบ้าน ผ่อนรถ — ค่างวดและตารางผ่อน">
-<meta property="og:description" content="คำนวณผ่อนบ้านและผ่อนรถออนไลน์ฟรี รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และดูตารางผ่อนรายเดือน">
 <meta property="og:url" content="https://kamnuan.net/kamnuanphon/">
 <meta property="og:locale" content="th_TH">
-<meta property="og:site_name" content="คำนวณ">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-  {"@type":"WebApplication","name":"คำนวณผ่อนบ้าน ผ่อนรถ","url":"https://kamnuan.net/kamnuanphon/","description":"คำนวณผ่อนบ้านและผ่อนรถออนไลน์ฟรี รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และดูตารางผ่อนรายเดือน","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th","isAccessibleForFree":true},
-  {"@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"ผ่อนบ้าน 1 ล้านบาท เดือนละเท่าไหร่","acceptedAnswer":{"@type":"Answer","text":"ขึ้นอยู่กับอัตราดอกเบี้ยและระยะเวลาผ่อน เช่น กู้ 1 ล้านบาท อัตราดอกเบี้ย 6.5% ต่อปี ผ่อน 30 ปี จะผ่อนเดือนละประมาณ 6,321 บาท"}},
-    {"@type":"Question","name":"ดอกเบี้ยบ้านกับดอกเบี้ยรถต่างกันยังไง","acceptedAnswer":{"@type":"Answer","text":"สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก (Effective Rate) ดอกเบี้ยจะลดลงทุกเดือนตามยอดเงินต้นที่เหลือ ส่วนสินเชื่อรถมักใช้อัตราดอกเบี้ยแบบ Flat Rate คำนวณจากเงินกู้เต็มจำนวณตลอดสัญญา"}},
-    {"@type":"Question","name":"ตารางผ่อนคืออะไร","acceptedAnswer":{"@type":"Answer","text":"ตารางผ่อนแสดงรายละเอียดการชำระแต่ละงวด ว่าแต่ละเดือนจ่ายเป็นดอกเบี้ยเท่าไหร่ ตัดเงินต้นเท่าไหร่ และยอดหนี้คงเหลือเท่าไหร่ ช่วยให้เห็นภาพรวมของภาระหนี้ตลอดสัญญา"}}
-  ]}
-]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"คำนวณผ่อนบ้าน ผ่อนรถ","url":"https://kamnuan.net/kamnuanphon/","description":"คำนวณผ่อนบ้านและผ่อนรถออนไลน์ฟรี รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และดูตารางผ่อนรายเดือน","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ผ่อนบ้าน 1 ล้านบาท เดือนละเท่าไหร่","acceptedAnswer":{"@type":"Answer","text":"ขึ้นอยู่กับอัตราดอกเบี้ยและระยะเวลาผ่อน เช่น กู้ 1 ล้านบาท อัตราดอกเบี้ย 6.5% ต่อปี ผ่อน 30 ปี จะผ่อนเดือนละประมาณ 6,321 บาท"}},{"@type":"Question","name":"ตารางผ่อนคืออะไร","acceptedAnswer":{"@type":"Answer","text":"ตารางผ่อนแสดงรายละเอียดการชำระแต่ละงวด ว่าแต่ละเดือนจ่ายเป็นดอกเบี้ยเท่าไหร่ ตัดเงินต้นเท่าไหร่ และยอดหนี้คงเหลือเท่าไหร่"}},{"@type":"Question","name":"ผ่อนบ้านนานกว่าดีกว่าสั้นกว่าอย่างไร","acceptedAnswer":{"@type":"Answer","text":"ผ่อนนานกว่า ค่างวดต่อเดือนน้อยกว่า แต่จ่ายดอกเบี้ยรวมมากกว่า ผ่อนสั้นกว่า ค่างวดต่อเดือนสูงกว่า แต่จ่ายดอกเบี้ยรวมน้อยกว่าและปลดหนี้เร็วกว่า"}},{"@type":"Question","name":"ตารางผ่อนมีประโยชน์อย่างไร","acceptedAnswer":{"@type":"Answer","text":"ตารางผ่อนแสดงรายละเอียดแต่ละงวดว่าเป็นดอกเบี้ยเท่าไหร่ และตัดเงินต้นเท่าไหร่ ช่วยให้เห็นว่างวดแรกๆส่วนใหญ่เป็นดอกเบี้ย เงินต้นลดน้อย แต่ยิ่งผ่อนนานสัดส่วนเงินต้นจะเพิ่มขึ้นเรื่อยๆ"}}]}]}
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1063556443578237" crossorigin="anonymous"></script>
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;--s2:#ECEAE6;--b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);--t0:#18181A;--t1:#4A4946;--t2:#7A7872;--ink:#18181A;--inv:#FFFFFF;--r:8px;--r-lg:12px;}
-[data-theme="dark"]{--bg:#111110;--s0:#1C1C1A;--s1:#242422;--s2:#2C2B28;--b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);--t0:#EDEAE2;--t1:#A8A49C;--t2:#68655E;--ink:#EDEAE2;--inv:#111110;}
-:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
-:focus:not(:focus-visible){outline:none;}
-html{scroll-behavior:smooth;}
-body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
-header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}
-[data-theme="dark"] header{background:rgba(17,17,16,0.92);}
-.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
-.logo svg{width:30px;height:30px;display:block;flex-shrink:0;}
-.logo-t{display:flex;flex-direction:column;line-height:1.1;}
-.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}
-.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
-.hdr-right{display:flex;align-items:center;gap:8px;}
-.back-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid var(--b0);border-radius:20px;font-family:'Sarabun',sans-serif;font-size:12px;color:var(--t1);text-decoration:none;transition:border-color .15s,color .15s;white-space:nowrap;}
-.back-btn:hover{border-color:var(--b1);color:var(--t0);}
+html,body{background:#F7F7F5 !important;color:#18181A !important;-webkit-text-size-adjust:100%;}
+body{font-family:'Sarabun',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6;}
+:root{--bg:#F7F7F5;--s0:#FFFFFF;--s1:#EFEFEC;--b0:rgba(0,0,0,0.08);--b1:rgba(0,0,0,0.14);--t0:#18181A;--t1:#52504C;--t2:#96938C;--ink:#18181A;--inv:#FFFFFF;--r:10px;--r-lg:14px;}
+header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 16px;gap:10px;border-bottom:1px solid var(--b0);background:#F7F7F5 !important;}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex:1;min-width:0;}
+.logo-icon{width:30px;height:30px;flex-shrink:0;}
+.logo-t{display:flex;flex-direction:column;line-height:1.15;}
+.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:#18181A;}
+.logo-en{font-size:9px;font-weight:600;color:#96938C;letter-spacing:2px;}
+.back-btn{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 10px;border:1px solid var(--b0);border-radius:8px;background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:12px;font-weight:500;color:#52504C;text-decoration:none;white-space:nowrap;}
 .back-btn svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.dark-btn{width:32px;height:32px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;}
-.dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
-.dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.ad-bar{display:flex;justify-content:center;padding:8px 16px;background:var(--s1);border-bottom:1px solid var(--b0);}
-.page{max-width:640px;margin:0 auto;padding:28px 20px 72px;}
+.page{width:100%;max-width:600px;margin:0 auto;padding:20px 16px 80px;}
 .page-hd{margin-bottom:20px;}
-.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,4vw,30px);font-weight:700;color:var(--t0);line-height:1.2;letter-spacing:-.3px;}
-.page-hd p{margin-top:6px;font-size:14px;color:var(--t1);line-height:1.6;}
-.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:14px;}
-.m-tab{padding:9px 4px;border:1px solid var(--b0);border-radius:var(--r);background:var(--s0);font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:var(--t1);cursor:pointer;transition:all .15s;text-align:center;}
-.m-tab:hover{border-color:var(--b1);color:var(--t0);}
-.m-tab.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
-.card{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}
-.card-body{padding:16px 18px;}
-.field{margin-bottom:14px;}
-.lbl{display:block;font-size:13px;font-weight:600;color:var(--t1);margin-bottom:6px;}
-.lbl-sub{font-size:11px;color:var(--t2);font-weight:400;margin-left:4px;}
-.inp-row{display:flex;gap:0;}
-.inp-row input{flex:1;height:44px;padding:0 12px;border:1px solid var(--b0);border-right:none;border-radius:var(--r) 0 0 var(--r);background:var(--s0);color:var(--t0);font-family:'Sarabun',sans-serif;font-size:15px;transition:border-color .15s;}
-.inp-row input:focus{outline:none;border-color:#2563EB;}
-.inp-suf{height:44px;padding:0 12px;border:1px solid var(--b0);border-radius:0 var(--r) var(--r) 0;background:var(--s1);color:var(--t2);font-size:13px;display:flex;align-items:center;white-space:nowrap;}
-.btn-calc{width:100%;height:46px;background:var(--ink);color:var(--inv);border:none;border-radius:var(--r);font-family:'Sarabun',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .15s;margin-top:4px;}
-.btn-calc:hover{opacity:.85;}
-/* result */
-.result-box{display:none;margin-top:10px;}
-.result-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px;}
-.r-card{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);padding:14px 16px;}
-.r-card-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.04em;margin-bottom:6px;}
-.r-card-val{font-family:'Noto Serif Thai',serif;font-size:22px;font-weight:700;color:var(--t0);line-height:1.1;}
-.r-card-unit{font-size:11px;color:var(--t2);margin-top:2px;}
-.r-card.hl .r-card-val{color:var(--ink);}
-/* breakdown */
-.breakdown{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}
-.bd-title{padding:12px 16px;font-size:13px;font-weight:600;color:var(--t1);border-bottom:1px solid var(--b0);background:var(--s1);}
-.bd-bar-wrap{padding:12px 16px;border-bottom:1px solid var(--b0);}
-.bd-bar-track{height:12px;border-radius:6px;background:var(--s2);overflow:hidden;display:flex;}
-.bd-bar-principal{background:#2563EB;height:100%;transition:width .4s;}
-.bd-bar-interest{background:#f97316;height:100%;transition:width .4s;}
-.bd-bar-legend{display:flex;gap:16px;margin-top:6px;}
-.bd-legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t2);}
-.bd-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
-.bd-dot.p{background:#2563EB;}
-.bd-dot.i{background:#f97316;}
-.bd-row{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;border-bottom:1px solid var(--b0);}
+.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(20px,5vw,26px);font-weight:700;color:#18181A;line-height:1.2;}
+.page-hd p{margin-top:6px;font-size:14px;color:#52504C;}
+
+.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
+.m-tab{height:44px;padding:0 8px;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:600;color:#52504C;cursor:pointer;}
+.m-tab.on{background:#18181A;border-color:#18181A;color:#FFFFFF;}
+
+.card{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:12px;width:100%;}
+.card-body{padding:16px;}
+.field{margin-bottom:16px;}
+.field:last-child{margin-bottom:0;}
+.lbl{display:block;font-size:13px;font-weight:600;color:#18181A;margin-bottom:7px;}
+.lbl-sub{font-size:11px;color:#96938C;font-weight:400;}
+.inp-row{display:flex;align-items:stretch;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;overflow:hidden;min-height:44px;}
+.inp-row:focus-within{border-color:#18181A;}
+.inp-row input{flex:1;min-width:0;width:0;height:44px;padding:0 10px;border:none;background:transparent;font-family:'Sarabun',sans-serif;font-size:16px;color:#18181A;outline:none;}
+.inp-suf{display:flex;align-items:center;padding:0 10px;background:#EFEFEC;font-size:13px;color:#96938C;white-space:nowrap;flex-shrink:0;border-left:1px solid var(--b0);}
+
+.btn-calc{width:100%;height:50px;margin-top:4px;background:#18181A;color:#FFFFFF;border:none;border-radius:var(--r-lg);font-family:'Sarabun',sans-serif;font-size:16px;font-weight:600;cursor:pointer;}
+.err-msg{display:none;margin-top:10px;font-size:13px;color:#DC2626;text-align:center;}
+.note-box{margin-top:10px;padding:12px 14px;background:#EFEFEC;border:1px solid var(--b0);border-radius:var(--r);font-size:12px;color:#96938C;line-height:1.6;text-align:center;}
+
+.result-box{display:none;margin-top:16px;}
+.result-hero{background:#18181A;border-radius:var(--r-lg);padding:20px 16px;text-align:center;margin-bottom:10px;}
+.result-hero-lbl{font-size:13px;color:#FFFFFF;opacity:.7;margin-bottom:8px;}
+.result-hero-val{font-family:'Noto Serif Thai',serif;font-size:36px;font-weight:700;color:#FFFFFF;line-height:1.3;}
+.result-hero-unit{font-size:14px;color:#FFFFFF;opacity:.7;margin-left:4px;}
+
+.bar-wrap{margin:0 0 10px;}
+.bar-track{display:flex;height:10px;border-radius:5px;overflow:hidden;background:#EFEFEC;}
+.bar-principal{background:#18181A;height:100%;}
+.bar-interest{background:#C0BDB6;height:100%;}
+.bar-legend{display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:#96938C;}
+
+.result-body{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;}
+.bd-row{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;border-bottom:1px solid var(--b0);font-size:14px;}
 .bd-row:last-child{border-bottom:none;}
-.bd-lbl{font-size:13px;color:var(--t1);}
-.bd-val{font-size:14px;font-weight:600;color:var(--t0);}
-/* amortize table */
-.table-wrap{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}
-.table-title{padding:12px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--b0);background:var(--s1);}
-.table-title span{font-size:13px;font-weight:600;color:var(--t1);}
-.table-toggle{font-size:12px;color:var(--ink);background:none;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;font-weight:600;padding:0;}
+.bd-row.total{font-weight:600;background:#EFEFEC;}
+.bd-label{color:#52504C;}
+.bd-val{color:#18181A;font-weight:500;}
+
+.table-wrap{margin-top:10px;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;}
+.table-toggle{width:100%;display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#EFEFEC;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:600;color:#18181A;}
+.table-scroll{max-height:300px;overflow-y:auto;}
 .amort-table{width:100%;border-collapse:collapse;font-size:12px;display:none;}
-.amort-table th{padding:8px 12px;text-align:right;font-weight:600;color:var(--t2);border-bottom:1px solid var(--b0);background:var(--s1);white-space:nowrap;}
-.amort-table th:first-child{text-align:center;}
-.amort-table td{padding:7px 12px;text-align:right;border-bottom:1px solid var(--b0);color:var(--t1);}
-.amort-table td:first-child{text-align:center;color:var(--t2);}
-.amort-table tr:last-child td{border-bottom:none;}
-.amort-table tr:hover td{background:var(--s1);}
-.note-box{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:10px 14px;font-size:12px;color:var(--t2);line-height:1.7;margin-bottom:10px;}
-.note-box strong{color:var(--t1);}
-.faq-wrap{margin-top:28px;border-top:1px solid var(--b0);padding-top:24px;}
-.faq-h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--t0);margin-bottom:14px;}
+.amort-table th{padding:7px 8px;background:#EFEFEC;color:#96938C;font-weight:600;font-size:10px;text-align:right;position:sticky;top:0;border-bottom:1px solid var(--b0);}
+.amort-table th:first-child{text-align:left;}
+.amort-table td{padding:7px 8px;border-top:1px solid var(--b0);color:#52504C;text-align:right;}
+.amort-table td:first-child{text-align:left;color:#18181A;font-weight:500;}
+
+.info-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.info-item{margin-bottom:16px;}
+.info-item:last-child{margin-bottom:0;}
+.info-title{font-size:14px;font-weight:600;color:#18181A;margin-bottom:6px;}
+.info-text{font-size:13px;color:#52504C;line-height:1.7;}
+
+.faq-wrap{margin-top:28px;}
+.faq-title{font-family:'Noto Serif Thai',serif;font-size:20px;font-weight:700;color:#18181A;margin-bottom:12px;}
 .faq-item{border:1px solid var(--b0);border-radius:var(--r);overflow:hidden;margin-bottom:8px;}
-.faq-q{width:100%;padding:13px 16px;background:var(--s0);border:none;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:var(--t0);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:background .15s;}
-.faq-q:hover{background:var(--s1);}
-.faq-q svg{width:14px;height:14px;stroke:var(--t2);stroke-width:2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .2s;}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px;background:#FFFFFF;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:#18181A;text-align:left;gap:12px;min-height:48px;}
+.faq-q svg{width:16px;height:16px;stroke:#96938C;stroke-width:2;fill:none;flex-shrink:0;transition:transform .2s;}
 .faq-q[aria-expanded="true"] svg{transform:rotate(180deg);}
-.faq-a{padding:0 16px;font-size:13px;color:var(--t1);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .25s ease,padding .25s ease;}
-.faq-a.open{max-height:400px;padding:0 16px 14px;}
-.related-wrap{margin-top:20px;border-top:1px solid var(--b0);padding-top:20px;}
-.related-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
-.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;}
-.related-card{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--s0);border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;color:var(--t0);transition:border-color .14s,background .14s;}
-.related-card:hover{border-color:var(--b1);background:var(--s1);}
-.related-ico{width:28px;height:28px;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.related-ico svg{width:12px;height:12px;stroke:var(--inv);stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.related-name{font-size:12px;font-weight:500;}
-footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}
-footer a{color:var(--t2);text-decoration:none;}
-footer a:hover{color:var(--t1);}
-@media(max-width:480px){
-  .page{padding-left:12px;padding-right:12px;}
-  .related-grid{grid-template-columns:1fr;}
-  .result-cards{grid-template-columns:1fr;}
-  .amort-table{font-size:11px;}
-  .amort-table th,.amort-table td{padding:6px 8px;}
-}
+.faq-a{max-height:0;overflow:hidden;font-size:14px;color:#52504C;line-height:1.7;transition:max-height .25s ease,padding .25s ease;padding:0 14px;background:#EFEFEC;}
+.faq-a.open{max-height:400px;padding:14px;}
+.faq-a strong{color:#18181A;}
+.related-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.related-title{font-size:11px;font-weight:600;color:#96938C;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.related-card{display:flex;align-items:center;gap:10px;padding:12px;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;}
+.related-ico{width:32px;height:32px;border-radius:8px;background:#18181A;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.related-ico svg{width:15px;height:15px;stroke:#FFFFFF;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.related-name{font-size:13px;font-weight:500;color:#18181A;}
+footer{border-top:1px solid var(--b0);padding:20px 16px;text-align:center;font-size:12px;color:#96938C;line-height:2;}
+footer a{color:#96938C;text-decoration:none;}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RPQNBN2DZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5RPQNBN2DZ');
+</script>
 </head>
 <body>
 <header role="banner">
   <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก">
-    <svg viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect width="30" height="30" rx="6" fill="var(--ink)"/><text x="3" y="22" font-family="Arial Black,sans-serif" font-size="19" font-weight="900" fill="var(--inv)">K</text><text x="13" y="24" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+x=</text></svg>
+    <svg class="logo-icon" viewBox="0 0 30 30" fill="none">
+      <rect width="30" height="30" rx="6" fill="#18181A"/>
+      <text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">K</text>
+      <text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="#FFFFFF">+×=</text>
+    </svg>
     <div class="logo-t"><span class="logo-th">คำนวณ</span><span class="logo-en">KAMNUAN</span></div>
   </a>
-  <div class="hdr-right">
-    <a class="back-btn" href="/"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
-    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" type="button" aria-label="เปลี่ยนโหมดสีเข้ม">
-      <svg id="iSun" style="display:none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-      <svg id="iMoon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
-  </div>
+  <a class="back-btn" href="/"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
 </header>
 
-<div class="ad-bar">
-  <ins class="adsbygoogle"
-    style="display:block;width:100%;max-width:728px;height:90px;"
-    data-ad-client="ca-pub-1063556443578237"
-    data-ad-slot="auto"
-    data-ad-format="horizontal"
-    data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<main class="page">
+<div class="page">
   <div class="page-hd">
     <h1>คำนวณผ่อนบ้าน ผ่อนรถ</h1>
     <p>รู้ค่างวดต่อเดือน ดอกเบี้ยรวม และดูตารางผ่อนรายงวดได้ทันที</p>
@@ -180,23 +145,9 @@ footer a:hover{color:var(--t1);}
   <div id="m0">
     <div class="card"><div class="card-body">
       <div class="field">
-        <label class="lbl" for="price0">ราคาบ้าน/คอนโด<span class="lbl-sub">(ไม่บังคับ)</span></label>
-        <div class="inp-row">
-          <input type="number" id="price0" min="0" inputmode="decimal">
-          <span class="inp-suf">บาท</span>
-        </div>
-      </div>
-      <div class="field">
-        <label class="lbl" for="down0">เงินดาวน์<span class="lbl-sub">(ไม่บังคับ)</span></label>
-        <div class="inp-row">
-          <input type="number" id="down0" min="0" inputmode="decimal" oninput="updateLoan0()">
-          <span class="inp-suf">บาท</span>
-        </div>
-      </div>
-      <div class="field">
         <label class="lbl" for="loan0">วงเงินกู้</label>
         <div class="inp-row">
-          <input type="number" id="loan0" min="0" inputmode="decimal">
+          <input type="number" id="loan0" min="0" inputmode="decimal" placeholder="2000000">
           <span class="inp-suf">บาท</span>
         </div>
       </div>
@@ -215,21 +166,23 @@ footer a:hover{color:var(--t1);}
         </div>
       </div>
       <button class="btn-calc" onclick="calc(0)" type="button">คำนวณ</button>
+      <div class="err-msg" id="err0"></div>
     </div></div>
+    <div class="note-box">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก คำนวณจากยอดหนี้คงเหลือจริง<br>อัตราจริงขึ้นกับธนาคารและประวัติเครดิต</div>
   </div>
 
   <!-- Mode 1: รถ (Flat Rate) -->
   <div id="m1" style="display:none;">
     <div class="card"><div class="card-body">
       <div class="field">
-        <label class="lbl" for="price1">ราคารถ<span class="lbl-sub">(ไม่บังคับ)</span></label>
+        <label class="lbl" for="price1">ราคารถ<span class="lbl-sub"> (ไม่บังคับ)</span></label>
         <div class="inp-row">
-          <input type="number" id="price1" min="0" inputmode="decimal">
+          <input type="number" id="price1" min="0" inputmode="decimal" oninput="updateLoan1()" placeholder="800000">
           <span class="inp-suf">บาท</span>
         </div>
       </div>
       <div class="field">
-        <label class="lbl" for="down1">เงินดาวน์<span class="lbl-sub">(ไม่บังคับ)</span></label>
+        <label class="lbl" for="down1">เงินดาวน์<span class="lbl-sub"> (ไม่บังคับ)</span></label>
         <div class="inp-row">
           <input type="number" id="down1" min="0" inputmode="decimal" oninput="updateLoan1()">
           <span class="inp-suf">บาท</span>
@@ -238,12 +191,12 @@ footer a:hover{color:var(--t1);}
       <div class="field">
         <label class="lbl" for="loan1">ยอดจัดไฟแนนซ์</label>
         <div class="inp-row">
-          <input type="number" id="loan1" min="0" inputmode="decimal">
+          <input type="number" id="loan1" min="0" inputmode="decimal" placeholder="800000">
           <span class="inp-suf">บาท</span>
         </div>
       </div>
       <div class="field">
-        <label class="lbl" for="rate1">อัตราดอกเบี้ย <span class="lbl-sub">ต่อปี (Flat Rate — ดอกเบี้ยคงที่ตลอดสัญญา)</span></label>
+        <label class="lbl" for="rate1">อัตราดอกเบี้ย <span class="lbl-sub">ต่อปี (Flat Rate)</span></label>
         <div class="inp-row">
           <input type="number" id="rate1" min="0" max="20" step="0.01" inputmode="decimal" value="2.79">
           <span class="inp-suf">% / ปี</span>
@@ -257,165 +210,128 @@ footer a:hover{color:var(--t1);}
         </div>
       </div>
       <button class="btn-calc" onclick="calc(1)" type="button">คำนวณ</button>
+      <div class="err-msg" id="err1"></div>
     </div></div>
-    <div class="note-box">รถยนต์ส่วนใหญ่ใช้ดอกเบี้ย Flat Rate คือคิดดอกเบี้ยจากยอดกู้ทั้งหมดตลอดสัญญา ทำให้ดูเหมือนดอกเบี้ยต่ำ แต่จ่ายรวมมากกว่าดอกเบี้ยแบบบ้าน</div>
+    <div class="note-box">สินเชื่อรถใช้ Flat Rate คำนวณดอกเบี้ยจากเงินกู้เต็มจำนวนตลอดสัญญา<br>ดอกเบี้ยที่แท้จริงสูงกว่าตัวเลขที่เห็น</div>
   </div>
 
-  <!-- Result -->
   <div class="result-box" id="resultBox">
-    <div class="result-cards">
-      <div class="r-card hl">
-        <div class="r-card-lbl">ค่างวดต่อเดือน</div>
-        <div class="r-card-val" id="rPMT">–</div>
-        <div class="r-card-unit">บาท/เดือน</div>
-      </div>
-      <div class="r-card">
-        <div class="r-card-lbl">ดอกเบี้ยรวม</div>
-        <div class="r-card-val" id="rInterest">–</div>
-        <div class="r-card-unit">บาท</div>
-      </div>
-      <div class="r-card">
-        <div class="r-card-lbl">จ่ายทั้งหมด</div>
-        <div class="r-card-val" id="rTotal">–</div>
-        <div class="r-card-unit">บาท</div>
-      </div>
+    <div class="result-hero">
+      <div class="result-hero-lbl">ค่างวดต่อเดือน</div>
+      <div><span class="result-hero-val" id="rPMT">—</span><span class="result-hero-unit">บาท</span></div>
     </div>
-
-    <div class="breakdown">
-      <div class="bd-title">สัดส่วนเงินต้นและดอกเบี้ย</div>
-      <div class="bd-bar-wrap">
-        <div class="bd-bar-track">
-          <div class="bd-bar-principal" id="barPrincipal" style="width:50%"></div>
-          <div class="bd-bar-interest" id="barInterest" style="width:50%"></div>
-        </div>
-        <div class="bd-bar-legend">
-          <div class="bd-legend-item"><div class="bd-dot p"></div><span id="legendP">เงินต้น 0%</span></div>
-          <div class="bd-legend-item"><div class="bd-dot i"></div><span id="legendI">ดอกเบี้ย 0%</span></div>
-        </div>
+    <div class="bar-wrap">
+      <div class="bar-track">
+        <div class="bar-principal" id="barPrincipal" style="width:50%"></div>
+        <div class="bar-interest" id="barInterest" style="width:50%"></div>
       </div>
-      <div class="bd-row"><span class="bd-lbl">วงเงินกู้</span><span class="bd-val" id="rLoan">–</span></div>
-      <div class="bd-row"><span class="bd-lbl">ดอกเบี้ยรวมตลอดสัญญา</span><span class="bd-val" id="rInterest2">–</span></div>
-      <div class="bd-row"><span class="bd-lbl">จำนวนงวด</span><span class="bd-val" id="rMonths">–</span></div>
-      <div class="bd-row"><span class="bd-lbl">อัตราดอกเบี้ย</span><span class="bd-val" id="rRate">–</span></div>
-      <div class="bd-row"><span class="bd-lbl">ควรมีรายได้อย่างน้อย <span style="font-size:11px;color:var(--t2);">(DSR 40%)</span></span><span class="bd-val" id="rIncome">–</span></div>
+      <div class="bar-legend"><span id="legendP">เงินต้น —</span><span id="legendI">ดอกเบี้ย —</span></div>
     </div>
-
+    <div class="result-body">
+      <div class="bd-row"><span class="bd-label">วงเงินกู้</span><span class="bd-val" id="rLoan">—</span></div>
+      <div class="bd-row"><span class="bd-label">ดอกเบี้ยรวมทั้งหมด</span><span class="bd-val" id="rInterest2">—</span></div>
+      <div class="bd-row"><span class="bd-label">ระยะเวลาผ่อน</span><span class="bd-val" id="rMonths">—</span></div>
+      <div class="bd-row"><span class="bd-label">อัตราดอกเบี้ย</span><span class="bd-val" id="rRate">—</span></div>
+      <div class="bd-row total"><span class="bd-label">รายได้ขั้นต่ำที่ควรมี</span><span class="bd-val" id="rIncome">—</span></div>
+    </div>
     <div class="table-wrap">
-      <div class="table-title">
-        <span>ตารางผ่อนรายงวด</span>
-        <button class="table-toggle" id="tableToggleBtn" onclick="toggleTable()" type="button">แสดงตาราง</button>
-      </div>
-      <div style="overflow-x:auto;">
+      <button class="table-toggle" id="tableToggleBtn" onclick="toggleTable()" type="button">
+        <span>ตารางผ่อนรายงวด</span><span>แสดงตาราง</span>
+      </button>
+      <div class="table-scroll">
         <table class="amort-table" id="amortTable">
-          <thead>
-            <tr>
-              <th>งวด</th>
-              <th>ค่างวด</th>
-              <th>ดอกเบี้ย</th>
-              <th>เงินต้น</th>
-              <th>คงเหลือ</th>
-            </tr>
-          </thead>
+          <thead><tr><th>งวด</th><th>ค่างวด</th><th>ดอกเบี้ย</th><th>เงินต้น</th><th>คงเหลือ</th></tr></thead>
           <tbody id="amortBody"></tbody>
         </table>
       </div>
     </div>
   </div>
 
+  <div class="info-wrap">
+    <div class="info-item">
+      <div class="info-title">ลดต้นลดดอก vs Flat Rate ต่างกันยังไง</div>
+      <div class="info-text">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก (Effective Rate) ดอกเบี้ยแต่ละงวดคำนวณจากยอดหนี้คงเหลือ ยิ่งผ่อนนานดอกเบี้ยยิ่งน้อยลง ส่วนสินเชื่อรถมักใช้ Flat Rate คำนวณจากเงินกู้เต็มจำนวนตลอดสัญญา ทำให้ดูเหมือนดอกเบี้ยต่ำแต่จริงๆสูงกว่า</div>
+    </div>
+    <div class="info-item">
+      <div class="info-title">รายได้ขั้นต่ำที่ควรมีคำนวณยังไง</div>
+      <div class="info-text">ใช้หลักการว่าภาระผ่อนต่อเดือนไม่ควรเกิน 40% ของรายได้ จึงคำนวณจากค่างวดหารด้วย 0.4 เพื่อประเมินว่าควรมีรายได้ขั้นต่ำเท่าไหร่ก่อนขอสินเชื่อ เป็นเกณฑ์ที่ธนาคารส่วนใหญ่ใช้พิจารณาอนุมัติ</div>
+    </div>
+  </div>
+
   <div class="faq-wrap">
-    <h2 class="faq-h2">คำถามที่พบบ่อย</h2>
+    <h2 class="faq-title">คำถามที่พบบ่อย</h2>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ดอกเบี้ยบ้านกับดอกเบี้ยรถต่างกันยังไง?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">สินเชื่อบ้านใช้ดอกเบี้ยแบบลดต้นลดดอก (Effective Rate) ดอกเบี้ยแต่ละงวดคำนวณจากยอดหนี้คงเหลือ ยิ่งผ่อนนานดอกเบี้ยยิ่งน้อยลง ส่วนสินเชื่อรถมักใช้ Flat Rate คำนวณจากเงินกู้เต็มจำนวณตลอดสัญญา ทำให้ดูเหมือนดอกเบี้ยต่ำแต่จริงๆ สูงกว่า</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ผ่อนบ้าน 1 ล้านบาท เดือนละเท่าไหร่<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ขึ้นอยู่กับอัตราดอกเบี้ยและระยะเวลาผ่อน เช่น กู้ 1 ล้านบาท อัตราดอกเบี้ย 6.5% ต่อปี ผ่อน 30 ปี จะผ่อนเดือนละประมาณ <strong>6,321 บาท</strong></div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ผ่อนบ้านนานกว่าดีกว่าสั้นกว่าอย่างไร?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">ผ่อนนานกว่า ค่างวดต่อเดือนน้อยกว่า แต่จ่ายดอกเบี้ยรวมมากกว่า ผ่อนสั้นกว่า ค่างวดต่อเดือนสูงกว่า แต่จ่ายดอกเบี้ยรวมน้อยกว่าและปลดหนี้เร็วกว่า ควรเลือกตามกำลังผ่อนต่อเดือนที่รับได้</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ผ่อนบ้านนานกว่าดีกว่าสั้นกว่าอย่างไร<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ผ่อนนานกว่า ค่างวดต่อเดือนน้อยกว่า แต่จ่ายดอกเบี้ยรวมมากกว่า ผ่อนสั้นกว่า ค่างวดต่อเดือนสูงกว่า แต่จ่ายดอกเบี้ยรวม<strong>น้อยกว่าและปลดหนี้เร็วกว่า</strong> ควรเลือกตามกำลังผ่อนต่อเดือนที่รับได้</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ตารางผ่อนมีประโยชน์อย่างไร?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">ตารางผ่อนแสดงรายละเอียดแต่ละงวดว่าเป็นดอกเบี้ยเท่าไหร่ และตัดเงินต้นเท่าไหร่ ช่วยให้เห็นว่างวดแรกๆ ส่วนใหญ่เป็นดอกเบี้ย เงินต้นลดน้อย แต่ยิ่งผ่อนนานสัดส่วนเงินต้นจะเพิ่มขึ้นเรื่อยๆ</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ตารางผ่อนมีประโยชน์อย่างไร<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ตารางผ่อนแสดงรายละเอียดแต่ละงวดว่าเป็นดอกเบี้ยเท่าไหร่ และตัดเงินต้นเท่าไหร่ ช่วยให้เห็นว่างวดแรกๆส่วนใหญ่เป็นดอกเบี้ย เงินต้นลดน้อย แต่ยิ่งผ่อนนานสัดส่วนเงินต้นจะ<strong>เพิ่มขึ้นเรื่อยๆ</strong></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ดาวน์รถเยอะช่วยลดดอกเบี้ยรวมแค่ไหน<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ดาวน์มากขึ้นทำให้ยอดจัดไฟแนนซ์ลดลง ดอกเบี้ย Flat Rate คิดจากยอดจัดไฟแนนซ์โดยตรง ดาวน์เพิ่มจึงลดดอกเบี้ยรวมแบบ<strong>เป็นเส้นตรง</strong> เช่น ดาวน์เพิ่ม 100,000 บาท ที่ดอกเบี้ย 2.79% ผ่อน 5 ปี ประหยัดดอกเบี้ยได้ประมาณ 14,000 บาท</div>
     </div>
   </div>
 
   <div class="related-wrap">
-    <div class="related-lbl">เครื่องมือที่เกี่ยวข้อง</div>
+    <div class="related-title">เครื่องมือที่เกี่ยวข้อง</div>
     <div class="related-grid">
-      <a class="related-card" href="/kamnuandokbia/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
-        <span class="related-name">คำนวณดอกเบี้ยเงินกู้</span>
-      </a>
-      <a class="related-card" href="/kamnuanretire/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <span class="related-name">คำนวณเงินเกษียณ</span>
-      </a>
-      <a class="related-card" href="/kamnuanphasi/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <span class="related-name">คำนวณภาษีเงินได้</span>
-      </a>
-      <a class="related-card" href="/kamnuanngoenoom/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <span class="related-name">คำนวณเงินออม</span>
-      </a>
+      <a class="related-card" href="/kamnuandokbia/"><div class="related-ico"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="related-name">คำนวณดอกเบี้ยเงินกู้</span></a>
+      <a class="related-card" href="/kamnuancredit/"><div class="related-ico"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div><span class="related-name">ดอกเบี้ยบัตรเครดิต</span></a>
+      <a class="related-card" href="/kamnuanngoenduean/"><div class="related-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><span class="related-name">คำนวณเงินเดือนสุทธิ</span></a>
+      <a class="related-card" href="/kamnuanretire/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><line x1="9" y1="22" x2="9" y2="12"/><line x1="15" y1="22" x2="15" y2="12"/></svg></div><span class="related-name">วางแผนเกษียณ</span></a>
     </div>
   </div>
-</main>
+</div>
 
 <footer role="contentinfo">
-  <p>© 2569 คำนวณ <a href="/">หน้าหลัก</a> <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p>
+  <p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/about.html">เกี่ยวกับเรา</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="/terms.html">เงื่อนไข</a> · <a href="/contact.html">ติดต่อ</a></p>
 </footer>
 
 <script>
-/* THEME */
-function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
-function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='dark'?'none':'block';localStorage.setItem('theme',t);}
-function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
-initTheme();
+function toggleFaq(btn){const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));btn.nextElementSibling.classList.toggle('open',!e);}
+function fmt(n){return Math.round(n).toLocaleString('th-TH');}
+function fmt2(n){return n.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});}
 
-let mode = 0;
 function setMode(m){
-  mode=m;
   document.getElementById('tab0').classList.toggle('on',m===0);
   document.getElementById('tab1').classList.toggle('on',m===1);
-  document.getElementById('m0').style.display=m===0?'block':'none';
-  document.getElementById('m1').style.display=m===1?'block':'none';
+  document.getElementById('m0').style.display=m===0?'':'none';
+  document.getElementById('m1').style.display=m===1?'':'none';
   document.getElementById('resultBox').style.display='none';
 }
 
-function updateLoan0(){
-  const price=parseFloat(document.getElementById('price0').value)||0;
-  const down=parseFloat(document.getElementById('down0').value)||0;
-  if(price>0&&down>=0) document.getElementById('loan0').value=Math.max(0,price-down);
-}
 function updateLoan1(){
   const price=parseFloat(document.getElementById('price1').value)||0;
   const down=parseFloat(document.getElementById('down1').value)||0;
   if(price>0&&down>=0) document.getElementById('loan1').value=Math.max(0,price-down);
 }
 
-function fmt(n){return Math.round(n).toLocaleString('th-TH');}
-function fmt2(n){return parseFloat(n.toFixed(2)).toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});}
-
 function calc(m){
   const loan=parseFloat(document.getElementById('loan'+m).value);
   const rate=parseFloat(document.getElementById('rate'+m).value);
   const years=parseFloat(document.getElementById('years'+m).value);
+  const err=document.getElementById('err'+m);
 
-  if(!loan||loan<=0){alert('กรุณากรอกวงเงินกู้');return;}
-  if(isNaN(rate)||rate<0){alert('กรุณากรอกอัตราดอกเบี้ย');return;}
-  if(!years||years<1){alert('กรุณากรอกระยะเวลาผ่อน');return;}
+  if(!loan||loan<=0){err.textContent='กรุณากรอกวงเงินกู้';err.style.display='block';return;}
+  if(isNaN(rate)||rate<0){err.textContent='กรุณากรอกอัตราดอกเบี้ย';err.style.display='block';return;}
+  if(!years||years<1){err.textContent='กรุณากรอกระยะเวลาผ่อน';err.style.display='block';return;}
+  err.style.display='none';
 
-  let pmt, totalInterest, totalPay, months=years*12;
+  let pmt,totalInterest,totalPay;
+  const months=years*12;
 
   if(m===0){
-    // Effective rate (ลดต้นลดดอก)
     const r=rate/100/12;
-    if(r===0){pmt=loan/months;}
-    else{pmt=loan*r*Math.pow(1+r,months)/(Math.pow(1+r,months)-1);}
+    pmt=r===0?loan/months:loan*r*Math.pow(1+r,months)/(Math.pow(1+r,months)-1);
     totalPay=pmt*months;
     totalInterest=totalPay-loan;
   } else {
-    // Flat rate
     totalInterest=loan*rate/100*years;
     totalPay=loan+totalInterest;
     pmt=totalPay/months;
@@ -425,8 +341,6 @@ function calc(m){
   const iPct=100-pPct;
 
   document.getElementById('rPMT').textContent=fmt2(pmt);
-  document.getElementById('rInterest').textContent=fmt(totalInterest);
-  document.getElementById('rTotal').textContent=fmt(totalPay);
   document.getElementById('rLoan').textContent=fmt(loan)+' บาท';
   document.getElementById('rInterest2').textContent=fmt(totalInterest)+' บาท';
   document.getElementById('rMonths').textContent=months+' งวด ('+years+' ปี)';
@@ -438,21 +352,19 @@ function calc(m){
   document.getElementById('legendP').textContent='เงินต้น '+pPct+'%';
   document.getElementById('legendI').textContent='ดอกเบี้ย '+iPct+'%';
 
-  // สร้างตารางผ่อน
-  buildTable(loan, rate, years, m);
+  buildTable(loan,rate,years,m);
 
   const box=document.getElementById('resultBox');
   box.style.display='block';
   requestAnimationFrame(()=>box.scrollIntoView({behavior:'smooth',block:'nearest'}));
 }
 
-function buildTable(loan, rate, years, m){
+function buildTable(loan,rate,years,m){
   const months=years*12;
   const tbody=document.getElementById('amortBody');
   tbody.innerHTML='';
 
   if(m===0){
-    // Effective
     const r=rate/100/12;
     const pmt=r===0?loan/months:loan*r*Math.pow(1+r,months)/(Math.pow(1+r,months)-1);
     let balance=loan;
@@ -465,7 +377,6 @@ function buildTable(loan, rate, years, m){
       tbody.appendChild(tr);
     }
   } else {
-    // Flat
     const totalInterest=loan*rate/100*years;
     const totalPay=loan+totalInterest;
     const pmt=totalPay/months;
@@ -485,13 +396,7 @@ let tableShown=false;
 function toggleTable(){
   tableShown=!tableShown;
   document.getElementById('amortTable').style.display=tableShown?'table':'none';
-  document.getElementById('tableToggleBtn').textContent=tableShown?'ซ่อนตาราง':'แสดงตาราง';
-}
-
-function toggleFaq(btn){
-  const exp=btn.getAttribute('aria-expanded')==='true';
-  btn.setAttribute('aria-expanded',String(!exp));
-  btn.nextElementSibling.classList.toggle('open',!exp);
+  document.getElementById('tableToggleBtn').querySelector('span:last-child').textContent=tableShown?'ซ่อนตาราง':'แสดงตาราง';
 }
 </script>
 </body>
